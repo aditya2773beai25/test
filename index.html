@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small, responsive web project built with plain HTML, CSS and JavaScript.">
+  <title>Small Web Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">test<span>.</span></a>
+    <nav class="nav">
+      <a href="#hero">Home</a>
+      <a href="#demo">Demo</a>
+      <a href="#about">About</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+        <span id="theme-icon">Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <p class="eyebrow">HTML &middot; CSS &middot; JavaScript</p>
+      <h1>A small web project<br>that actually looks good.</h1>
+      <p class="lead">
+        A single-page demo with a responsive layout, a light/dark theme,
+        and a tiny interactive counter &mdash; no frameworks, no build step.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#demo">Try the demo</a>
+        <a class="btn ghost" href="https://github.com/aditya2773beai25/test">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <div class="card">
+        <h2>Counter</h2>
+        <p class="muted">Click the buttons to change the value.</p>
+        <div class="counter">
+          <button id="decrement" class="btn ghost" type="button" aria-label="Decrease">-</button>
+          <output id="count" class="count">0</output>
+          <button id="increment" class="btn primary" type="button" aria-label="Increase">+</button>
+        </div>
+        <button id="reset" class="link" type="button">Reset</button>
+      </div>
+      <div class="card">
+        <h2>What's inside</h2>
+        <ul class="features">
+          <li>Responsive flexbox layout</li>
+          <li>CSS variables for theming</li>
+          <li>Theme saved in localStorage</li>
+          <li>Zero dependencies</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p class="muted">
+        This project is a starting point for learning or for testing a
+        GitHub workflow. Open <code>index.html</code> in a browser or serve
+        the folder with any static server.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> test &middot; Built for learning.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
